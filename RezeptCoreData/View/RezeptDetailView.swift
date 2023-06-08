@@ -8,8 +8,35 @@
 import SwiftUI
 
 struct RezeptDetailView: View {
+    @State var beschreibung: String = "Leckere Pasta mit Tomatensoße"
+    @State var zutaten: String = "Tomaten,Zwiebeln,Pasta"
+    @State var portionen: Int16 = 2
+    @State var rezeptName: String = "Spaghetti Bologense"
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ScrollView{
+                Text(rezeptName)
+                    .font(.title)
+                    .padding()
+                
+                Text("Portionen: \(portionen)")
+                    .font(.title2)
+                    .padding()
+                
+                Text("Zutaten: \(zutaten)")
+                    .font(.title2)
+                    .padding()
+                
+                Text("Beschreibung: \(beschreibung)")
+                    .font(.title2)
+                    .padding()
+            
+                
+                
+                
+            }
+        }
     }
 }
 

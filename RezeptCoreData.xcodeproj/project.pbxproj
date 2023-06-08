@@ -15,6 +15,7 @@
 		C0882A792A31C5510074A74F /* RezeptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0882A782A31C5510074A74F /* RezeptDetailView.swift */; };
 		C0882A7B2A31C5730074A74F /* AddRezeptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0882A7A2A31C5730074A74F /* AddRezeptView.swift */; };
 		C0882A7D2A31C5990074A74F /* RezeptViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0882A7C2A31C5990074A74F /* RezeptViewModel.swift */; };
+		C0882A832A31C76E0074A74F /* DataModelRezepte.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0882A812A31C76E0074A74F /* DataModelRezepte.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		C0882A782A31C5510074A74F /* RezeptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RezeptDetailView.swift; sourceTree = "<group>"; };
 		C0882A7A2A31C5730074A74F /* AddRezeptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRezeptView.swift; sourceTree = "<group>"; };
 		C0882A7C2A31C5990074A74F /* RezeptViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RezeptViewModel.swift; sourceTree = "<group>"; };
+		C0882A822A31C76E0074A74F /* DataModelRezepte.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModelRezepte.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				C0882A682A31C5060074A74F /* RezeptCoreDataApp.swift */,
+				C0882A812A31C76E0074A74F /* DataModelRezepte.xcdatamodeld */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0882A772A31C5290074A74F /* HomeView.swift in Sources */,
+				C0882A832A31C76E0074A74F /* DataModelRezepte.xcdatamodeld in Sources */,
 				C0882A792A31C5510074A74F /* RezeptDetailView.swift in Sources */,
 				C0882A7D2A31C5990074A74F /* RezeptViewModel.swift in Sources */,
 				C0882A6B2A31C5060074A74F /* ContentView.swift in Sources */,
@@ -377,6 +381,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C0882A812A31C76E0074A74F /* DataModelRezepte.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C0882A822A31C76E0074A74F /* DataModelRezepte.xcdatamodel */,
+			);
+			currentVersion = C0882A822A31C76E0074A74F /* DataModelRezepte.xcdatamodel */;
+			path = DataModelRezepte.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C0882A5D2A31C5060074A74F /* Project object */;
 }
