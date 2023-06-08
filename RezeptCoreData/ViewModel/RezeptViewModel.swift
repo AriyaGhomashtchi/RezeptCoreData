@@ -10,19 +10,21 @@ import Foundation
 
 class RezeptViewModel: ObservableObject {
     
-    let container = NSPersistentContainer(name: "RezeptModel")
+    var container : NSPersistentContainer
     
     
     @Published var savedRezepte : [Rezept] = []
     
     init() {
         
+        container = NSPersistentContainer(name: "DataModelRezepte")
         container.loadPersistentStores { _, error in
             
             if let error = error {
                 fatalError("core data store failed: \(error.localizedDescription)")
             }
         }
+        fetchRezepte()
     }
     
     func fetchRezepte() {
@@ -92,10 +94,11 @@ class RezeptViewModel: ObservableObject {
     func deleteRezept(indexSet: IndexSet) {
         guard let index = indexSet.first else {return}
         
-        let animalToDelete = savedRezepte[index]
-        container.viewContext.delete(animalToDelete)
+        
         
         do{
+            let animalToDelete = savedRezepte[index]
+            container.viewContext.delete(animalToDelete)
             try container.viewContext.save()
             fetchRezepte()
         }catch {

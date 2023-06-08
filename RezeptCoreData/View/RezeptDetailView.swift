@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct RezeptDetailView: View {
-    @State var beschreibung: String = "Leckere Pasta mit Tomatensoße"
-    @State var zutaten: String = "Tomaten,Zwiebeln,Pasta"
-    @State var portionen: Int16 = 2
-    @State var rezeptName: String = "Spaghetti Bologense"
+    @State var beschreibung: String = ""
+    @State var zutaten: String = ""
+    @State var portionen: Int16 = 0
+    @State var rezeptName: String = ""
     
     var body: some View {
         VStack {

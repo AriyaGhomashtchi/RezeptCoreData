@@ -30,10 +30,12 @@ struct HomeView: View {
                             Image(systemName: "plus")
                         })
                     }
+                }.navigationDestination(for: Rezept.self) { rezept in
+                    RezeptDetailView(beschreibung: rezept.beschreibung ?? "", zutaten: rezept.zutaten ?? "", portionen: rezept.portionen, rezeptName: rezept.rezeptName ?? "")
                 }
             }.navigationTitle("Rezepte")
                 .sheet(isPresented: $isDrawerOpen, content: {
-                    AddRezeptView()
+                    AddRezeptView(isDrawerOpen: $isDrawerOpen)
                 })
         }
     }
